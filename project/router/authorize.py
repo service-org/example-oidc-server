@@ -64,8 +64,6 @@ class OAuth2Authorize(Endpoint):
     def authorize(self, service: Service, request: Request) -> Response:
         """ 多种OAuth2授权请求处理
 
-        1. 如果cookies中不存在session_id则重新登录
-
         @param service: 服务对象
         @param request: 请求对象
         @return: Response
