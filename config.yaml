@@ -1,0 +1,19 @@
+COMMAND:
+  - service_sqlalchemy.cli.subcmds.migrate:Alembic
+SQLALCHEMY:
+  prod:
+    engine_options:
+      url: mysql+pymysql://username:password@host:port/oauth2?charset=utf8mb4
+    migrate_options:
+      script_location: alembic/prod
+CONSUL:
+  prod:
+    connect_options:
+      debug: true
+      data_center: data_center
+      base_url: base_url
+      acl_token: acl_token
+ITSDANGEROUS:
+  prod_cookie:
+    serializer_options:
+      secret_key: secret_key

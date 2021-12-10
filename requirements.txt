@@ -1,0 +1,6 @@
+service-consul
+service-authlib
+service-webserver
+service-sqlalchemy
+service-prometheus
+service-itsdangerous
